@@ -1,5 +1,10 @@
 // Copyright 2022 NNTU-CS
-#ifndef INCLUDE_TREE_H_
-#define INCLUDE_TREE_H_
+#include  <iostream>
+#include  <fstream>
+#include  <locale>
+#include  <cstdlib>
+#include  "tree.h"
 
-#endif  // INCLUDE_TREE_H_
+std::vector<char> getPerm(const Tree& tree, int n) {
+  return tree.getPermutation(n - 1);
+}
